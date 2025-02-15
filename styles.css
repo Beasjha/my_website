@@ -1,0 +1,281 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: #0a0a0a;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 0px 15px #00eaff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #00eaff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff007f;
+    text-shadow: 0 0 5px #ff007f;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("C:\Users\beasj\beas\Project\Beu.jpg") no-repeat center center/cover;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    color: white;
+}
+
+.hero-content .highlight {
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff;
+}
+
+.btn {
+    background: #00eaff;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 28px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff007f;
+    box-shadow: 0 0 15px #ff007f;
+}
+
+/* Sections */
+section {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+#projects {
+    text-align: center;
+    padding: 50px;
+    color: white;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.project-box {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-box:hover {
+    transform: scale(1.05);
+}
+
+.project-box h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.project-box p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+
+/* Skills */
+.skills-container {
+    display: flex;
+    flex-direction: column; /* Ensure stacking */
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.skill-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures wrapping for responsiveness */
+}
+
+.skill-box {
+    background: #222;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    min-width: 120px;
+}
+
+/*Cerifications*/
+.certification-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.certification-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures wrapping for responsiveness */
+}
+
+.certification-box {
+    background: #222;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    min-width: 200px;
+}
+
+
+/* Contact */
+#contact {
+    text-align: left;
+    padding: 50px;
+    color: white;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.contact-info img {
+    width: 25px;
+    height: 25px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+.cv-button {
+    background-color: #1abc9c;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.cv-button:hover {
+    background-color: #16a085;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #1a1a1a;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.submit-button {
+    background-color: #1abc9c;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.submit-button:hover {
+    background-color: #16a085;
+}
